@@ -1,9 +1,12 @@
-fun showInfo(name: String, age: Double) {
-    println("Имя: $name, возраст: $age")
+fun main() {
+    val product = Product("Пирожок", 35.0)
+    println(
+        "Стоимость продукта - " + product.name + " " +
+                product.price + " руб."
+    )
 }
 
-fun main() {
-    val userName = "Катя"
-    val userAge = 25
-//    showInfo(name = userName, age = userAge)
-}
+class Product(
+    val name: String?, // ваши правки на этой строчке кода
+    val price: Double // ваши правки на этой строчке кода
+) 
